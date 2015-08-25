@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>London Tube Shop</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css"/>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+</head>
+<body>
+<header>
+    <div class="blueBack">
+    </div>
+    <div class="logo">
+        <p>LONDON TUBE SHOP</p>
+    </div>
+</header>
+
+<nav id="navbar">
+    <button class="showButton icon-menu" type="button">
+        <p>Menu</p>
+    </button>
+    <ul>
+        <li><a href="">specials</a></li>
+        <li><a href="">brands</a></li>
+        <li><a href="">contacts</a></li>
+    </ul>
+</nav>
+<section>
+    <div id="items">
+        <ul class="item">
+            <li>
+                <img src="http://placehold.it/270x635">
+
+                <p>Name</p>
+                <button type="button" class="customBtn icon-cart">buy</button>
+            </li>
+            <li>
+                <img src="http://placehold.it/560x270">
+
+                <p>Name</p>
+                <button type="button" class="customBtn icon-cart">buy</button>
+            </li>
+            <li>
+                <img src="http://placehold.it/270x270">
+
+                <p>Name</p>
+                <button type="button" class="customBtn icon-cart">buy</button>
+            </li>
+            <li>
+                <img src="http://placehold.it/270x270">
+
+                <p>Name</p>
+                <button type="button" class="customBtn icon-cart">buy</button>
+            </li>
+            <li>
+                <img src="http://placehold.it/270x270">
+
+                <p>Name</p>
+                <button type="button" class="customBtn icon-cart">buy</button>
+            </li>
+
+            <li>
+                <img src="http://placehold.it/270x270">
+
+                <p>Name</p>
+                <button type="button" class="customBtn icon-cart">buy</button>
+            </li>
+            <li>
+                <img src="http://placehold.it/560x270">
+
+                <p>Name</p>
+                <button type="button" class="customBtn icon-cart">buy</button>
+            </li>
+            <li>
+                <img src="http://placehold.it/270x270">
+
+                <p>Name</p>
+                <button type="button" class="customBtn icon-cart">buy</button>
+            </li>
+            <li>
+                <img src="http://placehold.it/270x270">
+
+                <p>Name</p>
+                <button type="button" class="customBtn icon-cart">buy</button>
+            </li>
+        </ul>
+    </div>
+    <div class="brands">
+        <ul>
+            <li class="active" id="nike"><a href=""><img src="images/nike.png" alt="nike"/></a></li>
+            <li id="gucci"><a href=""><img src="images/Gucci_Logo.png" alt="gucci"/></a></li>
+            <li id="adidas"><a href=""><img src="images/2000px-Adidas_Logo.svg.png" alt="abibas"/></a></li>
+        </ul>
+        <div class="brandDescription">
+            <table>
+                <tr>
+                    <td id="yearBrand"><p>The brand of 2015</p></td>
+                    <td id="description"><p id="brandText"></p></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="googleMap">
+        <div class="contact">
+            <table>
+                <tr>
+                    <td>
+                        <p>Address:</p>
+                    </td>
+                    <td>
+                        <address>
+                            London Marylebone Station<br>
+                            (MYB), Melcombe Place,<br>
+                            London, UK<br>
+                        </address>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Phone:</p></td>
+                    <td><p>+44 20 7636 1000</p></td>
+                </tr>
+            </table>
+        </div>
+        <div id="map">
+            <script>
+                function initialize() {
+                    var mapProp = {
+                        center: new google.maps.LatLng(51.508742, -0.120850),
+                        zoom: 12,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+                    var map = new google.maps.Map(document.getElementById("map"), mapProp);
+                }
+                google.maps.event.addDomListener(window, 'load', initialize);
+            </script>
+        </div>
+    </div>
+</section>
+<footer>
+    <p id="copyright"></p>
+</footer>
+<script src="js/jquery-2.1.4.js" type="text/javascript"></script>
+<script src="js/mustache.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

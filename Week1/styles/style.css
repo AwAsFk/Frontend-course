@@ -46,6 +46,7 @@ h1,
 p {
     padding: 0;
     margin: 0;
+    font-family: "Open Sans Condensed";
 }
 
 h1 {
@@ -81,7 +82,7 @@ h1 {
     text-align: center;
     padding: 0;
     /*margin: 0;*/
-
+    text-transform: uppercase;
     position: absolute;
     height: 70px;
     width: 100%;
@@ -135,7 +136,7 @@ h1 {
     background: rgba(0, 0, 0, 0.2);
 }
 
-.mainSection {
+.main-section {
     position: relative;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -164,7 +165,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.customBtn {
+.custom-btn {
     position: relative;
     text-align: center;
     font-size: 15px;
@@ -176,7 +177,7 @@ h1 {
     border-color: rgba(0, 0, 0, 0.5);
 }
 
-.customBtn:before {
+.custom-btn:before {
     content: "\e600";
     position: absolute;
     top: 0;
@@ -227,7 +228,7 @@ h1 {
     padding: 0 20px;
 }
 
-.brandDescription {
+.brand-description {
     position: relative;
     top: 0;
     left: 0;
@@ -238,11 +239,11 @@ h1 {
     display: table;
 }
 
-.brandDescription p {
+.brand-description p {
     display: table-cell;
 }
 
-.yearBrand {
+.year-brand {
     text-align: center;
     vertical-align: middle;
     width: 270px;
@@ -251,13 +252,13 @@ h1 {
     font-stretch: condensed;
 }
 
-.brandText {
+.brand-text {
     border: 12px solid rgb(179, 202, 255);
     padding: 15px;
     background: white;
 }
 
-.googleMap {
+.google-map {
     position: relative;
     margin-top: 100px;
     width: 100%;
@@ -290,6 +291,7 @@ h1 {
 }
 
 address {
+    font-family: "Open Sans Condensed";
     display: table-cell;
     vertical-align: top;
     padding: 5px;
@@ -324,24 +326,24 @@ address {
     margin-right: 10px;
 }
 
-.fixedButton {
+.fixed-button {
     position: fixed;
     height: 40px;
     top: 0;
 }
 
-.fixedNav {
+.fixed-nav {
     position: fixed;
     height: 80px;
     top: 0;
     background: rgb(179, 202, 255);
 }
 
-.fixedNav a {
+.fixed-nav a {
     color: black;
 }
 
-.fixedNav a:hover {
+.fixed-nav a:hover {
     color: white;
 }
 
@@ -349,7 +351,7 @@ address {
 
 }
 
-.showButton {
+.show-button {
     position: absolute;
     bottom: 0;
     display: none;
@@ -360,20 +362,31 @@ address {
     border: 0;
     white-space: nowrap;
     padding: 0 15px;
+    /*padding-right: 75%;*/
     margin: 0;
     line-height: 40px;
     text-align: left;
 }
 
-.showButton:after {
+.show-button:after {
     position: relative;
     right: 0;
     padding-right: 10px;
 }
 
-.showButton:focus {
+.show-button:focus {
     border: 0;
     outline: none;
+}
+
+.show-button span {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+}
+
+.show-button span:hover {
+    background: blue;
 }
 
 /*p {*/
@@ -389,15 +402,15 @@ address {
 /*}*/
 
 @media (max-width: 780px) {
-    .showButton {
+    .show-button {
         display: block;
     }
 
-    .fixedNav {
+    .fixed-nav {
         height: 40px;
     }
 
-    .brandDescription {
+    .brand-description {
         width: 100%;
     }
 
@@ -428,15 +441,15 @@ address {
         display: block;
     }
 
-    .fixedNav a {
+    .fixed-nav a {
         color: white;
     }
 
-    .fixedNav a:hover {
+    .fixed-nav a:hover {
         color: deepskyblue;
     }
 
-    .special {
+    .main-header .main-nav .special {
         display: block;
     }
 }

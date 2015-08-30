@@ -1,5 +1,6 @@
 (function () {
-    var $showButton = $('.showButton');
+    var $showButton = $('.show-button');
+    var $hamburger = $('.show-button span');
     var size = 80;
     var $window = $(window);
 
@@ -9,24 +10,24 @@
         var distance = $height - $windowScrollTop;
         var $navbar = $('.main-nav');
         if (distance > size) {
-            $navbar.removeClass('fixedNav');
-            $showButton.removeClass('fixedButton');
+            $navbar.removeClass('fixed-nav');
+            $showButton.removeClass('fixed-button');
         }
         else {
-            if (!$navbar.hasClass('fixedNav')) {
-                $navbar.addClass('fixedNav');
-                $showButton.addClass('fixedButton');
+            if (!$navbar.hasClass('fixed-nav')) {
+                $navbar.addClass('fixed-nav');
+                $showButton.addClass('fixed-button');
             }
         }
     });
 
     $window.on('load', function () {
-        var $brandText = $('.brandText');
+        var $brandText = $('.brand-text');
         $.getJSON('brands.json')
             .always(function (data) {
                 $brandText.text(data[0].description);
             });
-        if ($('.showButton').css('display') !== 'none') {
+        if ($('.show-button').css('display') !== 'none') {
             size /= 2;
         }
     });
@@ -36,7 +37,7 @@
     });
 
     $('a img').on('click', function () {
-        var $brandText = $('.brandText');
+        var $brandText = $('.brand-text');
         var $t = $(this);
         $('a img').closest('li').removeClass('active');
         $t.closest('li').addClass('active');
@@ -60,7 +61,7 @@
 
     //$()
 
-    $showButton.on('click', function () {
+    $hamburger.on('click', function () {
         var $ul = $('.main-nav ul');
         //if ($ul.css('display') == 'block') {
         //    $ul.css('display', 'none');

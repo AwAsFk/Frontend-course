@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>London Tube Shop</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
     <link href="styles/style.css" rel="stylesheet"/>
     <script src="http://maps.googleapis.com/maps/api/js"></script>
 </head>
@@ -16,14 +17,14 @@
             <nav class="main-nav">
                 <button class="show-button" type="button"><span class="icon-menu"></span></button>
                 <ul>
-                    <li><a href="javascript:void(0)">specials</a></li>
-                    <li><a href="javascript:void(0)">brands</a></li>
-                    <li><a href="javascript:void(0)">contacts</a></li>
+                    <li><a href="#special-items">specials</a></li>
+                    <li><a href="#brands">brands</a></li>
+                    <li><a href="#map">contacts</a></li>
                 </ul>
             </nav>
         </header>
         <section class="main-section">
-            <ul class="special-items">
+            <ul id="special-items" class="special-items">
                 <li>
                     <img src="http://placehold.it/270x635">
 
@@ -81,7 +82,7 @@
                 </li>
             </ul>
 
-            <div class="brands">
+            <div id="brands" class="brands">
                 <ul>
                     <li class="active" id="nike">
                         <a href="javascript:void(0)"><img src="images/nike.png"/></a>
@@ -102,15 +103,15 @@
 
             <div class="google-map">
                 <div class="contact">
-                    <div class="address">
+                    <div class="main-address">
                         <p>Address:</p>
-                        <address>
+                        <address class="company-address">
                             London Marylebone Station<br>
                             (MYB), Melcombe Place,<br>
                             London, UK<br>
                         </address>
                     </div>
-                    <div class="phone">
+                    <div class="company-phone">
                         <p>Phone:</p>
 
                         <p>+44 20 7636 1000</p>

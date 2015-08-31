@@ -32,9 +32,9 @@
         }
     });
 
-    $('a').on('click', function (e) {
-        e.preventDefault();
-    });
+    //$('a').on('click', function (e) {
+    //    e.preventDefault();
+    //});
 
     $('a img').on('click', function () {
         var $brandText = $('.brand-text');

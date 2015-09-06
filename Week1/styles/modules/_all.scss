@@ -1,0 +1,24 @@
+@mixin zero-alignment {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin alignment-whole-page {
+  height: 100%;
+  @include zero-alignment;
+}
+
+@mixin cover-all {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin to-the-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+@mixin set-width-and-heigth($width, $height) {
+  width: $width;
+  height: $height;
+}

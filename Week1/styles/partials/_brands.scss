@@ -1,0 +1,92 @@
+.brands {
+  position: relative;
+
+  margin-top: 150px;;
+
+  ul {
+    @include zero-alignment;
+
+    text-align: center;
+
+    li {
+      position: relative;
+
+      display: inline-block;
+
+      margin: 10px;
+
+      .active {
+        &:after {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+
+          display: block;
+
+          width: 20px;
+          height: 20px;
+          margin-bottom: -20px;
+          margin-left: -10px;
+
+          content: '';
+          transform: rotate(45deg);
+
+          background: #b3caff;
+        }
+      }
+
+      a {
+        img {
+          @include set-width-and-heigth(100px, 70px);
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}
+
+.brand-description {
+  position: relative;
+
+  display: table;
+
+  @include set-width-and-heigth(70%, 100%);
+  margin: 0 auto;
+
+  background: #b3caff;
+
+  p {
+    display: table-cell;
+  }
+
+  @media (max-width: 780px) {
+    width: 100%;
+  }
+}
+
+.year-brand {
+  font: {
+    family: $open-sans-condensed;
+    size: 24px;
+  }
+
+  @include set-width-and-heigth(270px, auto);
+
+  text: {
+    align: center;
+  }
+  vertical: {
+    align: middle;
+  }
+}
+
+.brand-text {
+  font: {
+    family: $open-sans;
+  }
+
+  padding: 15px;
+
+  border: 12px solid #b3caff;
+  background: white;
+}

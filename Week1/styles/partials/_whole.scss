@@ -1,0 +1,18 @@
+html,
+body {
+  @include alignment-whole-page;
+}
+
+body {
+  background: #eaf5fe;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+.content {
+  position: relative;
+  @include cover-all;
+}

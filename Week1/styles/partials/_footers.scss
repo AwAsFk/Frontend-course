@@ -1,0 +1,27 @@
+.main-footer {
+  @include to-the-bottom;
+  left: 0;
+
+  @include set-width-and-heigth(100%, 75px);
+
+  background: black;
+}
+
+.copyright {
+  font: {
+    family: $open-sans;
+    weight: bolder;
+
+  }
+  line-height: 75px;
+
+  margin: {
+    right: 15px;
+  }
+
+  text: {
+    align: right;
+  }
+
+  color: white;
+}

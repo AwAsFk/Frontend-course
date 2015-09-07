@@ -3,13 +3,14 @@
 
   height: 100vh;
 
-  background: url('../../images/head.jpg');
+  background: url('../images/head.jpg');
   background-size: cover;
 
   h1 {
     font: {
       family: $open-sans-condensed;
       size: 60px;
+      weight: bolder;
     }
 
     position: absolute;

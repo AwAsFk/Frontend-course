@@ -50,11 +50,12 @@ p {
 .main-header {
   position: relative;
   height: 100vh;
-  background: url("../../images/head.jpg");
+  background: url("../images/head.jpg");
   background-size: cover; }
   .main-header h1 {
     font-family: "Open Sans Condensed";
     font-size: 60px;
+    font-weight: bolder;
     position: absolute;
     top: 0;
     right: 0;
@@ -164,7 +165,7 @@ p {
         .main-nav ul li,
         .main-nav ul a {
           display: block; }
-      .main-nav .main-header .main-nav .special {
+      .main-nav .special {
         display: block; } }
 
 .fixed-nav {
@@ -218,22 +219,22 @@ p {
       position: relative;
       display: inline-block;
       margin: 10px; }
-      .brands ul li .active:after {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        display: block;
-        width: 20px;
-        height: 20px;
-        margin-bottom: -20px;
-        margin-left: -10px;
-        content: '';
-        transform: rotate(45deg);
-        background: #b3caff; }
       .brands ul li a img {
         width: 100px;
         height: 70px;
         padding: 0 20px; }
+    .brands ul li.active:after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-bottom: -20px;
+      margin-left: -10px;
+      content: '';
+      transform: rotate(45deg);
+      background: #b3caff; }
 
 .brand-description {
   position: relative;
@@ -251,6 +252,7 @@ p {
 .year-brand {
   font-family: "Open Sans Condensed";
   font-size: 24px;
+  font-weight: bolder;
   width: 270px;
   text-align: center;
   vertical-align: middle; }

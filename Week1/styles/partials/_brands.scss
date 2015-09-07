@@ -19,32 +19,32 @@
 
       margin: 10px;
 
-      .active {
-        &:after {
-          @include to-the-bottom;
-          left: 50%;
-
-          display: block;
-
-          width: 20px;
-          height: 20px;
-          margin: {
-            bottom: -20px;
-            left: -10px;
-          }
-          content: '';
-          transform: rotate(45deg);
-
-          background: #b3caff;
-        }
-      }
-
       a {
         img {
           width: 100px;
           height: 70px;
           padding: 0 20px;
         }
+      }
+    }
+
+    li.active {
+      &:after {
+        @include to-the-bottom;
+        left: 50%;
+
+        display: block;
+
+        width: 20px;
+        height: 20px;
+        margin: {
+          bottom: -20px;
+          left: -10px;
+        }
+        content: '';
+        transform: rotate(45deg);
+
+        background: #b3caff;
       }
     }
   }
@@ -74,6 +74,7 @@
   font: {
     family: $open-sans-condensed;
     size: 24px;
+    weight: bolder;
   }
 
   width: 270px;

@@ -1,5 +1,7 @@
 .show-button {
-  line-height: 40px;
+  line: {
+    height: 40px;
+  }
 
   @include to-the-bottom;
   z-index: 6000;
@@ -24,7 +26,9 @@
   }
 
   span {
-    line-height: 40px;
+    line: {
+      height: 40px;
+    }
 
     padding: 13.2px;
 
@@ -70,7 +74,8 @@
 
     display: block;
 
-    @include set-width-and-heigth(22px, 22px);
+    width: 22px;
+    height: 22px;
 
     border: {
       right: 2px solid #858585;

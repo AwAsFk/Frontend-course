@@ -16,3 +16,8 @@ body {
   position: relative;
   @include cover-all;
 }
+
+h1,
+p {
+  @include zero-alignment;
+}

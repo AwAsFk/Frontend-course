@@ -17,8 +17,3 @@
   position: absolute;
   bottom: 0;
 }
-
-@mixin set-width-and-heigth($width, $height) {
-  width: $width;
-  height: $height;
-}

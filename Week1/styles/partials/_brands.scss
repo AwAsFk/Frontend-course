@@ -1,12 +1,16 @@
 .brands {
   position: relative;
 
-  margin-top: 150px;;
+  margin: {
+    top: 150px;;
+  }
 
   ul {
     @include zero-alignment;
 
-    text-align: center;
+    text: {
+      align: center;
+    }
 
     li {
       position: relative;
@@ -17,17 +21,17 @@
 
       .active {
         &:after {
-          position: absolute;
-          bottom: 0;
+          @include to-the-bottom;
           left: 50%;
 
           display: block;
 
           width: 20px;
           height: 20px;
-          margin-bottom: -20px;
-          margin-left: -10px;
-
+          margin: {
+            bottom: -20px;
+            left: -10px;
+          }
           content: '';
           transform: rotate(45deg);
 
@@ -37,7 +41,8 @@
 
       a {
         img {
-          @include set-width-and-heigth(100px, 70px);
+          width: 100px;
+          height: 70px;
           padding: 0 20px;
         }
       }
@@ -50,7 +55,8 @@
 
   display: table;
 
-  @include set-width-and-heigth(70%, 100%);
+  width: 70%;
+  height: 100%;
   margin: 0 auto;
 
   background: #b3caff;
@@ -70,7 +76,7 @@
     size: 24px;
   }
 
-  @include set-width-and-heigth(270px, auto);
+  width: 270px;
 
   text: {
     align: center;

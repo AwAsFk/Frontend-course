@@ -24,11 +24,6 @@
 .icon-menu:after {
   content: '\e601'; }
 
-h1,
-p {
-  margin: 0;
-  padding: 0; }
-
 html,
 body {
   height: 100%;
@@ -46,6 +41,11 @@ body {
   position: relative;
   width: 100%;
   height: 100%; }
+
+h1,
+p {
+  margin: 0;
+  padding: 0; }
 
 .main-header {
   position: relative;
@@ -252,7 +252,6 @@ body {
   font-family: "Open Sans Condensed";
   font-size: 24px;
   width: 270px;
-  height: auto;
   text-align: center;
   vertical-align: middle; }
 
